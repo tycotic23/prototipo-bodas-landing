@@ -1,0 +1,249 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+header{
+    height: 80vh;
+    background-image: url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
+    background-size: cover;
+    background-position: bottom 25% center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 7rem;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+button{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 30px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contador{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 2rem;
+    width: 50%;
+}
+
+#bk-contador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(197, 163, 118);
+}
+
+#contador>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    border: solid darkred 5px;
+}
+
+#contador>p{
+    font-size: 2rem;
+}
+
+#h3-grid{
+    grid-column: 1 / 5;
+    text-align: center;   
+    font-size: 3rem;
+}
+
+/* las section permiten separar con espacios diferentes sectores */
+.section{
+    padding-bottom: 3rem;
+}
+
+#almanaque{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+    justify-items: center;
+  align-items: center; 
+    text-align: center;
+    width: 50%;
+}
+
+.alm-d{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    color:rgb(245, 171, 75);
+}
+
+.alm-n{
+    color: gray;
+}
+
+.alm-select{
+    border: 3px rgb(245, 171, 75) solid;
+    border-radius: 500px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+#almanaque-contain{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+#almanaque-contain>p{
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#seccion-almanaque{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    background-color: black;
+    color:white;
+}
+
+#seccion-almanaque>div{
+    flex-grow: 1;
+    padding: 5rem 2rem;
+}
+
+#fechayhora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+#fecha{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+  align-items: baseline; 
+  gap:0.5rem;
+}
+
+#fecha>div{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 0.2rem;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+#fecha>p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#direccion>p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#dress-code{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(assets/recorte.jpg);
+    background-size: cover;
+    background-position: bottom 25% center;
+
+    height: 60vh;
+    width: 100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    color:white;
+}
+
+#dress-code>h2{
+    font-size: 3rem;
+}
+
+#dress-code>p{
+    font-size: 2rem;
+}
+
+#galeria-fotos-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#galeria-fotos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.5fr repeat(5,1fr);
+    justify-items: center;
+  align-items: center; 
+    text-align: center;
+}
+
+#galeria-fotos>h2{
+    grid-column: 1 / 4;
+}
+
+
+
+#galeria-fotos img{
+    width: 300px;
+}
+#galeria-fotos #galeria-propuesta{
+    grid-column: 1 / 4;
+    grid-row:5/7;
+    width: 600px;
+    padding: 1.2rem;
+    border: 2px gray solid;
+    transform: rotateZ(5deg);
+}
