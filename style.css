@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,400;1,600;1,900&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Asap', sans-serif;
 	/*outline:red 1px solid;*/
 }
 
@@ -11,7 +13,7 @@
 
 header{
     height: 80vh;
-    background-image: url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
+    background-image: url("assets/marco-header.png"),url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
     background-size: cover;
     background-position: bottom 25% center;
     display: flex;
@@ -31,7 +33,7 @@ h1{
 .separador-salmon{
 	height:10vh;
 	width:100vw;
-	background-color:#ffb6a6;
+	background-color:#fa876d;
 }
 
 .flex-center{
@@ -42,11 +44,14 @@ h1{
 }
 
 .carta{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     text-align: center;
-    font-size: 5rem;
-	
+    font-size: 4rem;
+	font-family: 'Great Vibes', cursive;
+    /* background-image: url(assets/marco2.png);
+    background-size: cover; */
+    padding: 3rem 4rem;   
+    background-color: rgba(255, 255, 255, 0.719);
+    margin-top: 2rem;
 }
 
 button{
@@ -65,8 +70,8 @@ main{
 
 #contador{
     display: grid;
-    grid-template-columns: repeat(4,150px);
-    grid-template-rows: repeat(auto-fill,1fr);
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(auto-fill,100px);
     /*padding: 2rem;*/
 	padding-bottom:1rem;
 	margin:0;
@@ -85,7 +90,7 @@ main{
 	margin:0;
     /*background-color: rgb(197, 163, 118);*/
 	/*background-color:#ff8469;*/
-	background-color:#a32d12;
+	/* background-color:#a35812; */
 	box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55);
 -webkit-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55);
 -moz-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55);
@@ -96,18 +101,18 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 5rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 400;
     /*border: solid darkred 5px;*/
 	background-image:linear-gradient(0deg, rgba(215,213,213,1) 0%, rgba(255,255,255,1) 52%, rgba(242,242,242,1) 100%);
 	border-radius:0 0 10px 10px;
-	box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) inset;
--webkit-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) inset;
--moz-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) inset;
+	box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) ;
+-webkit-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) ;
+-moz-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) ;
 }
 
 #contador>p{
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 #h3-grid{
@@ -121,6 +126,10 @@ main{
     padding-bottom: 3rem;
 	width:100%;
 	color:#ff8469;
+    background-image: url(assets/marco-header.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    
 }
 
 #almanaque{
@@ -264,6 +273,8 @@ main{
 
 #galeria-fotos>h2{
     grid-column: 1 / 4;
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 
