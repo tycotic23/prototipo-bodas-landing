@@ -124,8 +124,16 @@
             <h2> ¿Cómo debo venir vestido?</h2>
             <p>adsasd</p>
         </div>
-         <!-- seccion repetida: blanco con flores -->
-         <div class="flex-center section">
+         <!-- seccion regalo: blanco con flores -->
+         <div class="flex-center section section-gift">
+            <p id="cbu"><span>cbu:</span> 1234 7873 4523 4234</p>
+            <button class="button-icon">
+                Regalar 
+                <img src="assets/regalo-icon.png" alt="gift">
+            </button>
+            
+        </div>
+         <!-- <div class="flex-center section">
             <p class="carta">Elegir Menú</p>
             <p>asdasdas <br> asdasdas <br> asdasd</p>
             <p>asdasdas <br> asdasdas <br> asdasd</p>
@@ -136,7 +144,7 @@
 
             <button>Enviar selección</button>
             
-        </div>
+        </div> -->
         <!-- galeria (es un grid)-->
         <div id="galeria-fotos-container">
             <div id="galeria-fotos">
@@ -161,7 +169,68 @@
                 <p id="texto-galeria">Algún texto bonito que quiera escribir la pareja para que los invitados lo lean. Puede incluso ser una pequeña historia sobre ellos o como se conocieron</p>     
             </div>
         </div>
-       
+       <!-- seccion con fotos de los novios -->
+       <div class="novios-content">
+        <div class="novios-circles">
+            <img class="img-circle" src="assets/novia.jpg" >
+            <p id="y">y</p>
+            <img class="img-circle" src="assets/novio.jpg" >
+        </div>
+        <p>Estamos muy felices del momento que está por suceder.<br> Esperamos que seas parte de esto.<br>
+        Sos importante para nosotros y queremos que seas testigo de este lazo inquebrantable </p>
+       </div>
+       <!-- seccion de eleccion de menu con formulario para alergias -->
+       <div id="menu-seccion">
+            <div id="menu-selector">
+                <form action="">
+                    <h2>Elegir Menú</h2>
+                    <div id="menu-opciones">
+                        <label for="op1">
+                            <div class="menu-op">
+                                <img src="assets/menu1.jpg" alt="">
+                                <h3>Menú 1: Hamburguesa</h3>
+                                <p>Hamburguesa de muchas cosas</p>
+                                <input type="radio" name="menu" id="op1" value=1>
+                            </div>
+                        </label>
+                        <label for="op2">
+                            <div class="menu-op">
+                                <img src="assets/menu2.jpg" alt="">
+                                <h3>Menú 2: Tacos</h3>
+                                <p>Tacos sabrosos</p>
+                                <input type="radio" name="menu" id="op2" value=2>
+                            </div>
+                        </label>
+                    </div>
+                    <div id="formulario-menu-datos">
+                        <label>
+                            Tu nombre:
+                            <input type="text" id="nombre">
+                        </label>
+                        <label>
+                            Tu email:
+                            <input type="email" id="email">
+                        </label>
+                        <input type="submit" value="Elegir menú y enviar">
+                    </div>
+                </form>
+            </div>
+       </div>
+       <!-- mapa y como llegar -->
+       <div id="mapa-secccion">
+            <h2>Indicaciones para llegar</h2>
+            <img src="assets/mapa-ejemplo.jpg" alt="mapa-google">
+            <p><span>Dirección:</span> Portobello 142</p>
+            <p><span>Ciudad:</span> Alguna por ahí</p>
+            <p><br><span class="cursiva salmon">¿Cómo llego?:</span>Indicaciones para llegar en vehículo, en colectivo, etc</p>
+       </div>
+       <!-- Formulario para hablar con los novios -->
+        <div id="formulario-novios-container">
+            <div id="formulario-novios">
+                <h2>Enviarnos un mensaje</h2>
+            </div>
+        </div>
+    </div>
     </main>
     <footer></footer>
     
