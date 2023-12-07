@@ -288,7 +288,6 @@ main{
     background-image: url(assets/paisaje-cascada-bosque.jpg);
     background-size: cover;
     background-position: center;
-    /* background-color: bisque; */
 }
 
 #galeria-fotos{
@@ -491,17 +490,18 @@ form input{
     width: 75%;
 }
 
-#mapa-secccion{
+#mapa-seccion{
     padding: 4rem 2rem;
+    font-size: 2rem;
 }
 
-#mapa-secccion h2{
+#mapa-seccion h2{
     text-align: center;
     font-size: 4rem;
 }
 
-#mapa-secccion{
-    font-size: 2rem;
+#mapa-seccion img{
+    width: 100%;
 }
 
 .salmon{
@@ -562,13 +562,13 @@ form input{
     margin-left: 2rem;
     border-radius: 10px;
     height: 20px;
-    width: 90%;
+    width: 80%;
 }
 
 #formulario-novios textarea{
     margin-left: 2rem;
     resize: none;
-    width: 90%;
+    width: 80%;
     font-size: 1.2rem;
     height: 15rem;
     padding: 1rem;
@@ -629,3 +629,22 @@ input[type="radio"]:checked+label{
     border: 3px solid white;
 }
 
+@media (max-width: 1200px) {
+    #menu-opciones{
+        flex-direction: column;
+    }
+
+    #fotos{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(auto-fill,1fr);
+    }
+
+    .img-circle{
+        max-width: 200px;
+        width: auto;
+    }
+
+    #seccion-almanaque{
+        flex-direction: column;
+    }
+}
