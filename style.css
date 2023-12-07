@@ -56,7 +56,7 @@ h1{
     color:black;
 }
 
-button{
+button,input[type="submit"]{
     font-size: 2rem;
     font-weight: 600;
     padding: 2rem 4rem;
@@ -337,7 +337,14 @@ main{
 }
 
 #slider button{
+    background: none;
     padding: 1rem;
+    box-shadow:none ;
+    transition: 0.2s all;
+}
+
+#slider button:hover{
+    transform: scale(1.5);
 }
 
 #galeria-fotos>h2{
@@ -444,6 +451,12 @@ span{
     display: flex;
     gap:1rem;
 }
+
+#menu-opciones h4{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
 form h2{
     padding: 2rem 4rem;
     text-align: center;
@@ -495,20 +508,36 @@ form input{
     color:#fa876d;
 }
 
-#formulario-novios-container{
-    width: 100%;
+#formulario-novios{
     background-color: #fa876d;
-    padding: 5rem;
-    padding-left: 10rem;
-    padding-right: 0;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
 
-#formulario-novios{
+#formulario-novios form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 6rem;
+    gap:0;
+}
+
+#formulario-novios input[type="submit"]{
+    border-radius: 0 0 10px 10px;
+}
+
+#datos-novios{
     background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    padding-top: 3rem;
+    gap: 2rem;
+    padding: 3rem 0;
+    color:white;
 }
 
 #formulario-novios h2{
@@ -516,3 +545,87 @@ form input{
     text-align: center;
     color:white;
 }
+
+#formulario-novios hr{
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    border: none;
+}
+
+#formulario-novios label{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+#datos-novios input{
+    margin-left: 2rem;
+    border-radius: 10px;
+    height: 20px;
+    width: 90%;
+}
+
+#formulario-novios textarea{
+    margin-left: 2rem;
+    resize: none;
+    width: 90%;
+    font-size: 1.2rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
+
+#cronograma{
+    display:flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+#cronograma>div{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    
+}
+
+.reverse{
+    align-items: flex-start !important;
+    text-align: right;
+}
+
+#cronograma img{
+    width: 70px;
+    
+}
+
+#cronograma>div>div{
+    width: 200px;
+}
+
+input[type="text"],input[type="email"]{
+    width: 500px;
+    height: 30px;
+    font-family: 'Great Vibes', cursive;
+    color:brown;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border-style: outset;
+    border-width: 2px;
+}
+
+input[type="radio"]{
+    display:none;
+    
+}
+
+input[type="radio"]:checked+label{
+    background-color: brown;
+    color:white;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
