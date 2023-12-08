@@ -140,6 +140,11 @@
         <p><span>Dirección:</span> Portobello 142</p>
         <p><span>Ciudad:</span> Alguna por ahí</p>
         <p><br><span class="cursiva salmon">¿Cómo llego?:</span>Indicaciones para llegar en vehículo, en colectivo, etc</p>
+        <form action="submit">
+            <label for="email-transporte">Email:</label>
+            <input required type="email" id="email-transporte">
+            <input type="submit" value="Agregarse a la lista de la traffic">
+        </form>
    </div>
         
         <!-- galeria (es un grid)-->
@@ -179,7 +184,7 @@
        <!-- seccion de eleccion de menu con formulario para alergias -->
        <div id="menu-seccion">
             <div id="menu-selector">
-                <form action="">
+                <form action="submit">
                     <h2>Elegir Menú</h2>
                     <div id="menu-opciones">
                         <input required type="radio" name="menu" id="op1" value=1>
@@ -204,18 +209,24 @@
                         </label>
                     </div>
                     <div id="formulario-menu-datos">
-                        <label>
-                            Tu nombre:
+                        <label for="nombre">
+                            Tu nombre:</label>
                             <input required type="text" id="nombre">
-                        </label>
-                        <label>
-                            Tu email:
+                        
+                        <label for="email">
+                            Tu email:</label>
                             <input required type="email" id="email">
-                        </label>
+                        
+                        <label for="text-menu">Menú especial. Indique si usted requiere alguna dieta especial o si tiene alguna alergia.</label>
+                        <textarea id="text-menu" cols="30" rows="10"></textarea>
                         <input type="submit" value="Elegir menú y enviar">
                     </div>
                 </form>
             </div>
+       </div>
+       <!-- seccion de spotify -->
+       <div id="playlist">
+            <a href="">Nuestra Playlist 🧡</a>
        </div>
       
        <!-- Cronograma con las actividades y horarios -->

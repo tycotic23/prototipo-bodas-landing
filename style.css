@@ -272,11 +272,11 @@ main{
 }
 
 #dress-code>h2{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #dress-code>p{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #galeria-fotos-container{
@@ -565,6 +565,15 @@ form input{
     width: 80%;
 }
 
+textarea{
+   
+    resize: none;
+    width: 90%;
+    font-size: 1.2rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
 #formulario-novios textarea{
     margin-left: 2rem;
     resize: none;
@@ -627,6 +636,27 @@ input[type="radio"]:checked+label{
     text-align: center;
     border-radius: 20px;
     border: 3px solid white;
+}
+
+#playlist{
+    width: 100%;
+    padding: 4rem 0;
+    background-color:  #191414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playlist a{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    border: white 3px solid;
+    padding: 2rem 4rem;
+    background-color: #1ed760;
 }
 
 @media (max-width: 1200px) {
