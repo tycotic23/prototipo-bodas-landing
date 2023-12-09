@@ -403,6 +403,16 @@ h2{
     background-size: contain;
 }
 
+.section-gift h4{
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.section-gift img{
+    width: 100px;
+}
+
 span{
     font-weight: 600;
 }
