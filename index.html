@@ -66,8 +66,8 @@
                     <p>8</p>
                     <p>9</p>
                     <p>10</p>
-                    <p>11</p>
-                    <p class="alm-select">12</p>
+                    <p class="alm-select1">11</p>
+                    <p class="alm-select2">12</p>
                     <p>13</p>
                     <p>14</p>
                     <p>15</p>
@@ -97,6 +97,7 @@
             </div>
             <!-- columna direccion y hora -->
             <div id="fechayhora">
+                <h2>11 dic</h2>
                 <div class="horario-icon">
                     <img src="assets/civil-icon.png" alt="registro civil">
                     <p>Ceremonia Civil</p>
@@ -121,6 +122,7 @@
                     <p>Portobello 142</p>
                 </div>
                 <br>
+                <h2>12 dic</h2>
                 <div class="horario-icon">
                     <img src="assets/iglesia-icon.png" alt="ceremonia religiosa">
                     <p>Iglesia</p>
@@ -131,6 +133,30 @@
                     </div>
                     <div>
                         <p>0</p>
+                    </div>
+                    <p>:</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <p>hs</p>
+                </div>
+                <div class="direccion">
+                    <p>Portobello 142</p>
+                </div>
+                <br>
+                <div class="horario-icon">
+                    <img src="assets/fiesta-icon.png" alt="fiesta">
+                    <p>Fiesta</p>
+                </div>
+                <div class="fecha">
+                    <div>
+                        <p>2</p>
+                    </div>
+                    <div>
+                        <p>1</p>
                     </div>
                     <p>:</p>
                     <div>
@@ -164,19 +190,30 @@
             
         </div>
          <!-- mapa y como llegar -->
-       <div id="mapa-seccion">
-        <h2>Indicaciones para llegar</h2>
-        <img src="assets/mapa-ejemplo.jpg" alt="mapa-google">
-        <p><span>Dirección:</span> Portobello 142</p>
-        <p><span>Ciudad:</span> Alguna por ahí</p>
-        <p><br><span class="cursiva salmon">¿Cómo llego?:</span>Indicaciones para llegar en vehículo, en colectivo, etc</p>
-        <form action="submit">
-            <label for="email-transporte">Email:</label>
-            <input required type="email" id="email-transporte">
-            <input type="submit" value="Agregarse a la lista de la traffic">
-        </form>
-   </div>
-        
+         <div id="mapa-seccion-container">
+            <div id="mapa-seccion">
+                <h2>Indicaciones para llegar</h2>
+                <img src="assets/mapa-ejemplo.jpg" alt="mapa-google">
+                <p><span>Dirección:</span> Portobello 142</p>
+                <p><span>Ciudad:</span> Alguna por ahí</p>
+                <p><br><span class="cursiva salmon">¿Cómo llego?:</span>Indicaciones para llegar en vehículo, en colectivo, etc</p>
+                <form action="submit">
+                    <label for="email-transporte">Email:</label>
+                    <input required type="email" id="email-transporte">
+                    <input type="submit" value="Agregarse a la lista de la traffic">
+                </form>
+            </div>
+        </div>
+        <!-- seccion con fotos de los novios -->
+       <div class="novios-content">
+        <div class="novios-circles">
+            <img class="img-circle" src="assets/novia.jpg" >
+            <p id="y">y</p>
+            <img class="img-circle" src="assets/novio.jpg" >
+        </div>
+        <p>Estamos muy felices del momento que está por suceder.<br> Esperamos que seas parte de esto.<br>
+        Sos importante para nosotros y queremos que seas testigo de este lazo inquebrantable </p>
+       </div>
         <!-- galeria (es un grid)-->
         <div id="galeria-fotos-container">
             <div id="galeria-fotos">
@@ -196,21 +233,10 @@
                     </div>
                     <button id="btn-sig"><img src="assets/flechas-09.png" alt="siguiente"></button>
                 </div>
-<!--                 <img id="galeria-propuesta" src="assets/mujer-sorprendida-angulo-aceptando-propuesta.jpg">
- -->        
                 <p id="texto-galeria">Algún texto bonito que quiera escribir la pareja para que los invitados lo lean. Puede incluso ser una pequeña historia sobre ellos o como se conocieron</p>     
             </div>
         </div>
-       <!-- seccion con fotos de los novios -->
-       <div class="novios-content">
-        <div class="novios-circles">
-            <img class="img-circle" src="assets/novia.jpg" >
-            <p id="y">y</p>
-            <img class="img-circle" src="assets/novio.jpg" >
-        </div>
-        <p>Estamos muy felices del momento que está por suceder.<br> Esperamos que seas parte de esto.<br>
-        Sos importante para nosotros y queremos que seas testigo de este lazo inquebrantable </p>
-       </div>
+       
        <!-- seccion de eleccion de menu con formulario para alergias -->
        <div id="menu-seccion">
             <div id="menu-selector">

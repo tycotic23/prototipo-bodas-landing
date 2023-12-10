@@ -176,8 +176,15 @@ main{
     color: brown;
 }
 
-.alm-select{
-    border: 3px brown solid;
+.alm-select2{
+    border: 4px brown solid;
+    padding: 0.3rem;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.alm-select1{
+    border: 4px black solid;
     padding: 0.3rem;
     font-weight: 800;
     font-size: 2rem;
@@ -222,6 +229,10 @@ main{
     background-color: brown;
 }
 
+#fechayhora h2{
+    font-size: 3rem;
+}
+
 .horario-icon img{
     width: 50px;
 }
@@ -247,8 +258,6 @@ main{
 
 .fecha>div{
     background-color: white;
-    /* border: solid 1px black;
-    border-radius: 10px; */
     padding: 0.2rem;
     font-size: 3rem;
     width: 50px;
@@ -525,15 +534,26 @@ form input{
 #mapa-seccion{
     padding: 4rem 2rem;
     font-size: 2rem;
+    width: max-content;
+
+}
+
+#mapa-seccion-container{
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
 }
 
 #mapa-seccion h2{
+    
     text-align: center;
     font-size: 4rem;
 }
 
 #mapa-seccion img{
     width: 100%;
+    border: #fa876d solid 5px;
 }
 
 .salmon{
@@ -717,3 +737,28 @@ width: 60px;
         flex-direction: column;
     }
 }
+
+/* ****************************************************** 
+animaciones
+*******************************************************/
+h1,p,#cronograma img{
+    transition: all 0.2s;
+}
+
+h1:hover{
+    transform: scale(1.2);
+}
+
+p:hover{
+    transform: translateY(-3px);
+    cursor: default;
+}
+
+#cronograma img:hover{
+    transform: translateX(10px);
+}
+
+#playlist a:hover, input[type="submit"]:hover{
+    background-color: white;
+    cursor: pointer;
+    }
