@@ -9,11 +9,13 @@
 	/*outline:red 1px solid;*/
 }
 
-
+html{
+    background-color: red;
+}
 
 header{
     height: 80vh;
-    background-image: url("assets/marco-header.png"),url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
+    background-image: url(assets/hojas-caen.gif),url("assets/marco-header.png"),url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
     background-size: cover;
     background-position: bottom 25% center;
     display: flex;
@@ -48,8 +50,6 @@ h1{
     text-align: center;
     font-size: 4rem;
 	font-family: 'Great Vibes', cursive;
-    /* background-image: url(assets/marco2.png);
-    background-size: cover; */
     padding: 3rem 4rem;   
     background-color: rgba(255, 255, 255, 0.719);
     margin-top: 2rem;
@@ -93,13 +93,15 @@ main{
     display: grid;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(auto-fill,100px);
-    /*padding: 2rem;*/
 	padding-bottom:1rem;
 	margin:0;
     width: 50%;
 	gap:0.5rem;
 	justify-content: center;
-	/*background-color:#ffb6a6;*/
+}
+
+#contador>p{
+    font-size: 1.3rem;
 }
 
 #bk-contador{
@@ -125,7 +127,6 @@ main{
     text-align: center;
     font-size: 3rem;
     font-weight: 400;
-    /*border: solid darkred 5px;*/
 	background-image:linear-gradient(0deg, rgba(215,213,213,1) 0%, rgba(255,255,255,1) 52%, rgba(242,242,242,1) 100%);
 	border-radius:0 0 10px 10px;
 	box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) ;
@@ -133,9 +134,7 @@ main{
 -moz-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55) ;
 }
 
-#contador>p{
-    font-size: 1.3rem;
-}
+
 
 #h3-grid{
     grid-column: 1 / 5;
@@ -415,7 +414,8 @@ h2{
 .section-gift h4{
     color: black;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
 }
 
 .section-gift img{
@@ -736,6 +736,59 @@ width: 60px;
     #seccion-almanaque{
         flex-direction: column;
     }
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 4rem;
+    }
+
+    #contador{
+        grid-template-columns: repeat(4,50px);
+        grid-template-rows: repeat(auto-fill,50px);
+        padding-bottom:0.5rem;
+        width: 50%;
+        gap:0.2rem;
+    }
+
+    #contador>p{
+        font-size: 0.6rem;
+    }
+
+    #contador>div>p{
+        font-size: 1.3rem;
+    }
+
+    .carta{
+        font-size: 3rem;
+        padding: 1.5rem 2rem;
+        margin-bottom: 2rem;   
+    }
+
+    button{
+        font-size: 1.5rem;
+    }
+    
+    #dress-code>h2{
+        font-size: 3rem;
+    }
+    
+    #dress-code>p{
+        font-size: 2rem;
+    }
+
+    #cbu{
+        font-size: 2rem;
+    }
+    
+    .section-gift{
+        background-image: none;
+    }
+    
+    .section-gift h4{
+        font-size: 2rem;
+    }
+    
 }
 
 /* ****************************************************** 
