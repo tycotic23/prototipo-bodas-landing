@@ -727,6 +727,30 @@ width: 60px;
     background-color: white;
 }
 
+#menu{
+    display: flex;
+    gap: 1rem;
+}
+
+#menu a{
+    font-size: 1.5rem;
+    color: #fa876d;
+    font-family: 'Great Vibes', cursive;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    font-size: 1.5rem;
+    color: #fa876d;
+    font-family: 'Great Vibes', cursive;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: white;
+    padding: 2rem;
+}
+
 @media (max-width: 1200px) {
     #menu-opciones{
         flex-direction: column;
