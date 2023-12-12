@@ -8,10 +8,10 @@
     font-family: 'Asap', sans-serif;
 	/*outline:red 1px solid;*/
 }
-/* 
+
 html{
-    background-color: red;
-}  */
+    width: 100%;
+} 
 
 header{
     height: 80vh;
@@ -757,7 +757,8 @@ width: 60px;
 @media (max-width: 600px) {
     h1{
         font-size: 4rem;
-       
+        color: #fa876d;
+        text-decoration: underline white;
     }
 
     #contador{
