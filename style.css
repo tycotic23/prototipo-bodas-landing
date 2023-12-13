@@ -9,11 +9,13 @@
 	/*outline:red 1px solid;*/
 }
 
-
+img{
+    max-width: 100%;
+}
 
 header{
     height: 80vh;
-    background-image: url(assets/hojas-caen.gif),url("assets/marco-header.png"),url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
+    background-image: url("assets/marco-header.png"),url(assets/hojas-caen.gif),url(assets/vista-lateral-pareja-romantica-al-aire-libre.jpg);
     background-size: cover;
     background-position: bottom 25% center;
     display: flex;
@@ -80,6 +82,7 @@ margin: 1rem 0rem;
 
 button img{
     width: 50px;
+    max-width: max-content;
 }
 
 main{
@@ -110,9 +113,6 @@ main{
     padding: 0;
     width: 100%;
 	margin:0;
-    /*background-color: rgb(197, 163, 118);*/
-	/*background-color:#ff8469;*/
-	/* background-color:#a35812; */
     background-color: bisque;
 	box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55);
 -webkit-box-shadow: -1px -4px 9px -2px rgba(0,0,0,0.55);
@@ -474,14 +474,15 @@ span{
     padding: 2rem;
     background-color: brown;
     max-width: 500px;
-    --mask: 
+   /*  --mask: 
     linear-gradient(#000 0 0) center/calc(100% - 20px) calc(100% - 20px) no-repeat,
     conic-gradient(from  135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) 0 0   /20px 10px space no-repeat,
     conic-gradient(from  -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/20px 10px space no-repeat,
     conic-gradient(from   45deg at left  ,#0000,#000 1deg 89deg,#0000 90deg) 0 0   /10px 20px no-repeat space,
     conic-gradient(from -135deg at right ,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/10px 20px no-repeat space;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
+    -webkit-mask: var(--mask);
+          mask: var(--mask); */
+          
 }
 
 #menu-opciones{
@@ -727,29 +728,60 @@ width: 60px;
     background-color: white;
 }
 
-#menu{
-    display: flex;
-    gap: 1rem;
+nav{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
 }
 
-#menu a{
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 6rem;
+    width: 40vw;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: all 0.2s;
+    display: none;
+}
+
+.menu--show{
+    opacity: 100;
+    transform: translateX(0);
+    display: flex;
+}
+
+.menu a{
     font-size: 1.5rem;
     color: #fa876d;
     font-family: 'Great Vibes', cursive;
     text-decoration: none;
 }
 
-#menu a:hover{
+.menu a:hover{
     font-size: 1.5rem;
     color: #fa876d;
     font-family: 'Great Vibes', cursive;
     text-decoration: underline;
 }
 
-nav{
-    background-color: white;
-    padding: 2rem;
+
+
+
+
+.toggle-menu{
+    width: 40px;
+    position: absolute;
+    top:1rem;
+    left: 1rem;
+    cursor:pointer;
 }
+
+
+
+
 
 @media (max-width: 1200px) {
     #menu-opciones{
@@ -951,7 +983,7 @@ nav{
     }
 
     .menu-op img{
-        padding: 1rem;
+        padding: 10rem;
         max-width: 70%;
         --mask: 
     linear-gradient(#000 0 0) center/calc(100% - 10px) calc(100% - 10px) no-repeat,

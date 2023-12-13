@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div id="menu">
-            <a href="">Confirmar asistencia</a>
-            <a href="">Horarios</a>
-            <a href="">Dress Code</a>
-            <a href="">Regalos</a>
-            <a href="">Cómo llego</a>
-            <a href="">Nosotros</a>
-            <a href="">Menú</a>
-            <a href="">Música</a>
-            <a href="">Cronograma</a>
-            <a href="">Contacto</a>
-        </div>
-    </nav>
+    
     <header>
         
         <h1 class="cursiva">Facundo & Sara</h1>
 		<audio id="audio" src="assets/cancion - La vie en rose.mp3" controls autoplay loop></audio>
     </header>
-    <script>
-        var audio = document.getElementById("audio");
-        audio.volume = 0.5;
-    </script>
+    <nav>
+        
+        <div id="menu" class="menu">
+            <a href="#confirmar-asistencia">Confirmar asistencia</a>
+            <a href="#seccion-almanaque">Horarios</a>
+            <a href="#dress-code">Dress Code</a>
+            <a href="#gift">Regalos</a>
+            <a href="#mapa-seccion">Cómo llego</a>
+            <a href="#novios-seccion">Nosotros</a>
+            <a href="#menu-selector">Elegir menú</a>
+            <a href="#playlist">Música</a>
+            <a href="#cronograma">Cronograma</a>
+            <a href="#formulario-novios">Contacto</a>
+        </div>
+        <div>
+            <!-- menu -->
+            <div id="toggle-menu" class="toggle-menu">
+                <img src="assets/menu-toggle.png" alt="">
+            </div>
+            <!-- logo -->
+        </div>
+    </nav>
     <main>
 	 <!-- contador -->
         <div id="bk-contador">
@@ -48,7 +53,7 @@
 	
         <!-- invitacion y boton de confirmar asistencia -->
         <div class="flex-center section">
-            <p class="carta">Nos casamos<br> y queremos que estés ahí<br> en ese momento tan especial</p>
+            <p id="confirmar-asistencia" class="carta">Nos casamos<br> y queremos que estés ahí<br> en ese momento tan especial</p>
             <button>Confirmar asistencia</button>
         </div>
        
@@ -193,7 +198,7 @@
             <p>Sport-Elegante</p>
         </div>
          <!-- seccion regalo: blanco con flores -->
-         <div class="flex-center section section-gift">
+         <div class="flex-center section section-gift" id="gift">
             <img src="assets/luna-de-miel-icon.png" alt="Luna de miel">
             <h4>Ayudanos a alcanzar nuestra Luna de Miel</h4>
             <p id="cbu"><span>cbu:</span> 1234 7873 4523 4234</p>
@@ -221,7 +226,7 @@
         </div>
         <!-- seccion con fotos de los novios -->
        <div class="novios-content">
-        <div class="novios-circles">
+        <div class="novios-circles" id="novios-seccion">
             <img class="img-circle" src="assets/novia.jpg" >
             <p id="y">y</p>
             <img class="img-circle" src="assets/novio.jpg" >
@@ -380,6 +385,6 @@
 
     
     </main>
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
