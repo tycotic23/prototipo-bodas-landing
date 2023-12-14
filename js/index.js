@@ -62,3 +62,40 @@ let spinLoader=document.getElementById("spin");
         spinLoader.parentElement.removeChild(spinLoader);
     }
   });
+
+
+  /* botones de la galeria */
+  let imgsCount=document.getElementById("fotos").childElementCount;
+  let idImg=1;
+  let sigBtn=document.getElementById("btn-sig");
+  let prevBtn=document.getElementById("btn-prev");
+let principalImg=document.querySelector(".img-prin");
+let newImg;
+
+  sigBtn.addEventListener("click",()=>{
+    /* aumentar el contador */
+    idImg=(idImg<imgsCount)?idImg+1:1;
+    /* quitar la clase de img principal */
+    document.querySelector(".img-prin").classList.toggle("img-prin");
+    /* agregar la nueva img principal segun el contador */
+    document.querySelector(construirQueryImg(idImg)).classList.toggle("img-prin");
+  });
+
+
+  prevBtn.addEventListener("click",()=>{
+/* quitar el contador */
+idImg=(idImg>1)?idImg-1:imgsCount;
+/* quitar la clase de img principal */
+document.querySelector(".img-prin").classList.toggle("img-prin");
+/* agregar la nueva img principal segun el contador */
+document.querySelector(construirQueryImg(idImg)).classList.toggle("img-prin");
+  });
+
+
+  function construirQueryImg(id){
+    query="#fotos>img";
+    for(i=1;i<id;i++){
+        query+="+img";
+    }
+    return query;
+  }
