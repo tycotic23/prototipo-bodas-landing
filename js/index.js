@@ -1,6 +1,17 @@
 /* audio */
 let audio = document.getElementById("audio");
 audio.volume = 0.5;
+let onOff= document.getElementById("music-onoff");
+onOff.addEventListener('click',()=>{
+  if(audio.paused){
+    audio.play();
+    onOff.setAttribute("src", "assets/icono-musica.png");
+  }else{
+    audio.pause();
+    onOff.setAttribute("src", "assets/icono-musica-paused.png");
+  }
+    
+});
 
 /* toggle menu */
 let toggleMenu=document.getElementById("toggle-menu");
