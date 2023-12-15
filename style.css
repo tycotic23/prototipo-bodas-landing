@@ -825,6 +825,15 @@ nav{
   }
 }
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
     #menu-opciones{
         flex-direction: column;
@@ -848,9 +857,21 @@ nav{
         background-image: url(assets/marco2.png);
         background-size: cover;
     }
+
+    #formulario-novios form{
+        padding: 2rem 0rem;
+    }
 }
 
-@media (max-width: 600px) {
+
+
+
+
+
+
+
+
+@media (max-width: 680px) {
     h1{
         font-size: 4rem;
         color: #fa876d;
@@ -1083,6 +1104,7 @@ nav{
     #formulario-novios textarea{
         width: 70%;
     }
+    
     
 }
 
